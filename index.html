@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Moja Galeria</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; background: #f0f0f0; }
+        .gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; padding: 20px; }
+        .gallery img { max-width: 200px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
+    </style>
+</head>
+<body>
+<script>
+  var pass = prompt("Podaj hasło:");
+  if (pass !== "tajnehaslo123") {
+    document.body.innerHTML = "Brak dostępu.";
+  }
+</script>
+<h1>Moja Tajna Galeria</h1>
+<div class="gallery">
+    <img src="img/placeholder.jpg" alt="Zdjęcie 1">
+    <img src="img/placeholder.jpg" alt="Zdjęcie 2">
+    <img src="img/placeholder.jpg" alt="Zdjęcie 3">
+</div>
+</body>
+</html>
